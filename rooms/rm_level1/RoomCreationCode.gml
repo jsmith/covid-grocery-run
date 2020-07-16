@@ -1,0 +1,1 @@
+inst_165771A5.walking_route = [[0, 500]]

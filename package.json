@@ -1,0 +1,15 @@
+{
+  "name": "covid-shopping",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-images": "node scripts/build.js"
+  },
+  "keywords": [],
+  "author": "Jacob Smith <jsmith@hey.com>",
+  "dependencies": {
+    "node-html-to-image": "^3.0.0",
+    "servor": "^4.0.2",
+    "tailwindcss": "^1.4.6"
+  }
+}
