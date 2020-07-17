@@ -1,1 +1,4 @@
-inst_165771A5.walking_route = [[0, 500]]
+show_debug_message("Init walking routes!!");
+walking_route_1[0, 0] = 0;
+walking_route_1[0, 1] = 100;
+inst_165771A5.walking_route = walking_route_1;

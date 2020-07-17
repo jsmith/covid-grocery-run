@@ -15,16 +15,6 @@
             "m_owner": "2c17671e-67db-4ee6-ba7e-213af6f05f75"
         },
         {
-            "id": "91b9c85c-d8e0-4cd3-a353-2bf04e727898",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "2c17671e-67db-4ee6-ba7e-213af6f05f75"
-        },
-        {
             "id": "fb39c865-1797-4696-bea8-a5c3ae665a31",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -118,7 +108,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "-1",
             "varName": "target_x",
             "varType": 1
         },
@@ -132,9 +122,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "-1",
             "varName": "target_y",
             "varType": 1
+        },
+        {
+            "id": "dcbba302-f0e7-4308-ba15-6c5908798d2e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "route_index",
+            "varType": 0
         }
     ],
     "solid": false,
