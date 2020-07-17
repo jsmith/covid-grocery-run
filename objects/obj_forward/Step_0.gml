@@ -49,5 +49,9 @@ if hsp > 0 {
 	image_speed = 0;	
 }
 
+// Check for transition collision
+var instance = instance_place(x, y, obj_transition);
+if instance != noone room_goto(instance.roomTarget);
+
 x += hsp;
 y += vsp;
