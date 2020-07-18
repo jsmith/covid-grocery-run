@@ -103,11 +103,27 @@
             }
         },
         {
+            "Key": "20046001-ba43-4820-849c-9d34a8881483",
+            "Value": {
+                "id": "e1570d4d-c406-4e5f-9e1a-082392904f32",
+                "resourcePath": "fonts\/fnt_small\/fnt_small.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2c17671e-67db-4ee6-ba7e-213af6f05f75",
             "Value": {
                 "id": "59225f2e-b05c-4904-9c88-12a9937e11a1",
                 "resourcePath": "objects\/obj_strg\/obj_strg.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2e83783b-d837-4d60-8be9-0a3062293799",
+            "Value": {
+                "id": "6e00ef85-7e91-4270-b6c2-186d81646e53",
+                "resourcePath": "fonts\/fnt_large\/fnt_large.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -511,6 +527,14 @@
             }
         },
         {
+            "Key": "cf2f5137-9ba4-418b-aa80-e6284fce89c5",
+            "Value": {
+                "id": "8bc8aed2-8b25-4053-b8c0-7df460542261",
+                "resourcePath": "objects\/obj_game_over\/obj_game_over.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d30bbe49-3e35-4d03-afea-21cc4ffaee91",
             "Value": {
                 "id": "5e14a237-f9ed-4f3b-8916-29ff1ebaf828",
@@ -532,6 +556,14 @@
                 "id": "602fa4ab-4adb-474d-8406-8cc2b5afe46c",
                 "resourcePath": "views\/d8c7a812-ea79-4c72-beeb-444edc498600.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dd58e203-6d39-4864-92f2-58e07dd64a78",
+            "Value": {
+                "id": "dd46bf65-9464-45bd-810b-db324388fac7",
+                "resourcePath": "sounds\/snd_game_over\/snd_game_over.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -580,6 +612,14 @@
                 "id": "de5ca8d4-711a-49a1-91f2-e8501ef4bb7e",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fd5028b1-9be1-49e7-95c3-56102055c1b8",
+            "Value": {
+                "id": "021634b0-5921-421e-b635-3560d7b0b158",
+                "resourcePath": "sounds\/snd_background_highpass\/snd_background_highpass.yy",
+                "resourceType": "GMSound"
             }
         },
         {
