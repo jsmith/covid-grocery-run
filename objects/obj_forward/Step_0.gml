@@ -1,55 +1,33 @@
-/// @description Check close
+/// @description Main logic
 // var distance_to_person = distance_to_object(obj_strg);
 // show_debug_message("Distance -> " + string(distance_to_person) + ", Direction -> " + string(direction));
 
-var key_right = keyboard_check(vk_right);
-var key_left = keyboard_check(vk_left);
-var key_up = keyboard_check(vk_up);
-var key_down = keyboard_check(vk_down);
+// ----------- Get keyboard information first
+var key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
+var key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+var key_up = keyboard_check(vk_up) || keyboard_check(ord("W"));
+var key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
+var shift_down = keyboard_check(vk_shift);
 
-var hsp = (key_right - key_left) * 3;
-var vsp = (key_down - key_up) * 3;
-
-var bbox_side;
-if hsp > 0 bbox_side = bbox_right else bbox_side = bbox_left;
-if (
-	tilemap_get_at_pixel(tilemap, bbox_side + hsp, bbox_top) != 0 || 
-	tilemap_get_at_pixel(tilemap, bbox_side + hsp, bbox_bottom) != 0 ||
-	tilemap_get_at_pixel(tilemap, bbox_side + hsp, (bbox_top + bbox_bottom) / 2) != 0
-) {
-	// show_debug_message("Horizontal collision! hsp -> " + string(hsp) + ", x -> " + string(x) + ", bbox_side -> " + string(bbox_side));
-	if hsp > 0 x -= (bbox_side + hsp) mod 32 + 1;
-	else x += 32 - ((bbox_side + hsp) mod 32);
-	// show_debug_message("x is now -> " + string(x + hsp));
-}
-
-if vsp > 0 bbox_side = bbox_bottom else bbox_side = bbox_top;
-if (
-	tilemap_get_at_pixel(tilemap, bbox_left, bbox_side + vsp) != 0 || 
-	tilemap_get_at_pixel(tilemap, bbox_right, bbox_side + vsp) != 0 ||
-	tilemap_get_at_pixel(tilemap, (bbox_left + bbox_right) / 2, bbox_side + vsp) != 0
-) {
-	// show_debug_message("Verticle collision! vsp -> " + string(vsp) + ", y/x -> " + string(y) + "/" + string(x) + ", bbox_side -> " + string(bbox_side));
-	if vsp > 0 y -= (bbox_side + vsp) mod 32 + 1;
-	else y += 32 - ((bbox_side + vsp) mod 32);
-	// show_debug_message("y is now -> " + string(y + vsp));
-}
-
-
-image_speed = 0.75;
-if hsp > 0 {
-	sprite_index = spr_right;
-} else if hsp < 0 {
-	sprite_index = spr_left;
-} else if vsp > 0 {
-	sprite_index = spr_forward;
-} else if vsp < 0 {
-	sprite_index = spr_backward;
+// ----------- Determining speed logic
+var spd = 0;
+var img_spd = 0;
+if shift_down {
+	spd = spd_run;
+	img_spd = img_spd_run;
 } else {
-	image_speed = 0;	
-}
+	spd = spd_n;
+	img_spd = img_spd_n;
+};
 
-// Check for transition collision
+// ----------- Get horizontal/vertical speed
+var move_x = 0;
+var move_y = 0;
+// Only move horizontally if we are not moving vertically
+move_y = (key_down - key_up) * spd;
+if move_y == 0 move_x = (key_right - key_left) * spd;
+
+// ----------- Check for transition collision
 var instance = instance_place(x, y, obj_transition);
 if instance != noone {
 	with (obj_game) {
@@ -58,5 +36,47 @@ if instance != noone {
 	}
 };
 
-x += hsp;
-y += vsp;
+image_speed = img_spd;
+if move_x > 0 {
+	sprite_index = spr_right;
+} else if move_x < 0 {
+	sprite_index = spr_left;
+} else if move_y > 0 {
+	sprite_index = spr_forward;
+} else if move_y < 0 {
+	sprite_index = spr_backward;
+} else {
+	image_index = 1;
+	image_speed = 0;
+}
+
+
+// ----------- Collision checks
+// Horizontal first
+if move_x != 0 {
+	if place_meeting(x + move_x, y, obj_collision) {
+		repeat (true) {
+			if !place_meeting(x + sign(move_x), y, obj_collision) x += sign(move_x);
+			else break;
+		}
+		move_x = 0;
+	}	
+}
+
+
+// Now verticle
+if move_y != 0 {
+	if place_meeting(x, y + move_y, obj_collision) {
+
+		repeat (true) {
+			if !place_meeting(x, y + sign(move_y), obj_collision) y += sign(move_y);
+			else break;
+		}
+		move_y = 0;
+	}	
+	
+}
+
+// ----------- Finally move the player the remaining amount
+x += move_x;
+y += move_y;
