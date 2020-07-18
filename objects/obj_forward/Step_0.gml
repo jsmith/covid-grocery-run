@@ -27,9 +27,16 @@ var move_y = 0;
 move_y = (key_down - key_up) * spd;
 if move_y == 0 move_x = (key_right - key_left) * spd;
 
+// ----------- Get player direction
+var facing = -1;
+if move_x > 0 facing = dir.right;
+else if move_x < 0 facing = dir.left;
+else if move_y > 0 facing = dir.down;
+else if move_y < 0 facing = dir.up;
+
 // ----------- Check for transition collision
 var instance = instance_place(x, y, obj_transition);
-if instance != noone {
+if instance != noone and facing == instance.player_facing_before {
 	with (obj_game) {
 		spawn_room = instance.roomTarget;
 		do_transition = true;
