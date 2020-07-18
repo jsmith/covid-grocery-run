@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "2303fba1-80e9-4ca3-8e93-def3a4633e3a",
-            "Value": {
-                "id": "951a4037-7bea-4729-8e61-fc9831316ecc",
-                "resourcePath": "objects\/camera\/camera.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2c17671e-67db-4ee6-ba7e-213af6f05f75",
             "Value": {
                 "id": "59225f2e-b05c-4904-9c88-12a9937e11a1",
@@ -460,6 +452,14 @@
                 "id": "5a982c07-1cf5-46bf-8613-0e2d4f3451ad",
                 "resourcePath": "views\/ccd4231c-e615-4d42-b3ab-aa3bd48d67d2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d30bbe49-3e35-4d03-afea-21cc4ffaee91",
+            "Value": {
+                "id": "5e14a237-f9ed-4f3b-8916-29ff1ebaf828",
+                "resourcePath": "rooms\/rm_setup\/rm_setup.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

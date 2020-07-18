@@ -1,4 +1,3 @@
-show_debug_message("Init walking routes!!");
-walking_route_1[0, 0] = 0;
-walking_route_1[0, 1] = 100;
-inst_165771A5.walking_route = walking_route_1;
+view_enabled = true;
+view_set_visible(0, true);
+view_set_camera(0, global.cam);
