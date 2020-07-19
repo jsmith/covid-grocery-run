@@ -46,6 +46,20 @@ if displaying_game_win or displaying_game_over {
 	draw_rectangle_colour(0, 0, gui_width, gui_height, c_black, c_black, c_black, c_black, false);
 	draw_set_alpha(1);	
 } else {
+	draw_set_color(c_black);
+	draw_set_alpha(0.5);
+	draw_rectangle(10, 10, 220, 70, false);
+	draw_set_alpha(0.7);
+	draw_rectangle(10, 10, 220, 70, true);
+	draw_set_alpha(1);
+
+	var hb_width = 103;
+	var hb_height = 15;
+	var hb_x = 20;
+	var hb_y = 20;
 	draw_set_color(c_white);
-	draw_text(64, 32,  global.num_collected);
+	draw_set_font(fnt_small);
+	draw_text(hb_x, 40,  string(num_collected) + " / " + string(num_total) + " (" + string((num_collected * 100) / num_total) + "%)");
+	draw_sprite(spr_health_bar_container, 0, hb_x, hb_y);
+	draw_sprite_stretched(spr_health_bar, 0, hb_x, hb_y, hp / hp_max * hb_width, hb_height);
 }
