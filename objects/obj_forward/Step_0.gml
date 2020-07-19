@@ -1,6 +1,25 @@
 /// @description Main logic
-// var distance_to_person = distance_to_object(obj_strg);
+var distance_to_person = distance_to_object(obj_strg);
 // show_debug_message("Distance -> " + string(distance_to_person) + ", Direction -> " + string(direction));
+
+
+if distance_to_person < 30 {
+	with obj_game {
+		if distance_to_person < 15 {
+			hp = max(hp - 0.5, 0);
+		} else {
+			hp = max(hp - 0.25, 0);	
+		}
+
+		audio_sound_pitch(snd_background_highpass, 1 + 0.25 * (1 - hp / hp_max));
+
+		if hp == 0 {
+			game_over = true;
+		}
+
+	}
+}
+
 
 // ----------- Get keyboard information first
 var key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
@@ -38,8 +57,12 @@ else if move_y < 0 facing = dir.up;
 var instance = instance_place(x, y, obj_transition);
 if instance != noone and facing == instance.player_facing_before {
 	with (obj_game) {
-		spawn_room = instance.roomTarget;
-		do_transition = true;
+		// make sure that we have collected everything
+		// only then can we move to the next room
+		if num_total == num_collected {
+			spawn_room = instance.roomTarget;
+			do_transition = true;	
+		}
 	}
 };
 

@@ -42,10 +42,12 @@ if movement_x != 0 {
 	
 	show_debug_message(string(array_height_2d(walking_route)))
 	if route_index == array_height_2d(walking_route) {
-		target_x = starting_x - x;
-		target_y = starting_y - y;
+		// show_debug_message("starting -> " + string(starting_y) + ", y -> " + string(y) + ", move -> " + string(starting_y - y));
+		target_x = 0;
+		target_y = 0;
 		route_index = -1;
 	} else {
+		// show_debug_message("Now at " + string(y));
 		target_x = walking_route[route_index, 0];
 		target_y = walking_route[route_index, 1];
 	}
