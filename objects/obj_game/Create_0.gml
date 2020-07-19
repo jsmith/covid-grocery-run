@@ -30,5 +30,16 @@ global.debug = false;
 // --------- Sound stuff
 audio_play_sound(snd_background_highpass, 0, true);
 
+// --------- Health variables
+hp = 50;
+hp_max = 50;
+hb_width = 100;
+hb_height = 12;
+hb_x = 20;
+hb_y = 20;
+
+// --------- Score stuff
+num_collected = 0;
+
 // --------- DONE!
 room_goto_next();
