@@ -12,6 +12,7 @@ enum dir {
 // --------- Game over variables
 game_over = false;
 displaying_game_over = false;
+displaying_game_win = false;
 
 // --------- Transition variables
 gui_width = display_get_gui_width();
