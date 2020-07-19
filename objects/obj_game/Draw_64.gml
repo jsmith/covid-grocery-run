@@ -59,6 +59,7 @@ if displaying_game_win or displaying_game_over {
 	var hb_y = 20;
 	draw_set_color(c_white);
 	draw_set_font(fnt_small);
+	draw_set_halign(fa_left);
 	draw_text(hb_x, 40,  string(num_collected) + " / " + string(num_total) + " (" + string((num_collected * 100) / num_total) + "%)");
 	draw_sprite(spr_health_bar_container, 0, hb_x, hb_y);
 	draw_sprite_stretched(spr_health_bar, 0, hb_x, hb_y, hp / hp_max * hb_width, hb_height);

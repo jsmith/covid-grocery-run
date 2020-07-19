@@ -29,9 +29,6 @@ global.walking_route_up_100[0, 1] = -100;
 global.cam = camera_create_view(0, 0, 704, 528, 0, obj_forward, -1, -1, 300, 300);
 global.debug = false;
 
-// --------- Sound stuff
-audio_play_sound(snd_background_highpass, 0, true);
-
 // --------- Health variables
 hp = 50;
 hp_max = 50;
