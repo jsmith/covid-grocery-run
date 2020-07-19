@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "18e0b188-bab3-4a4f-b127-142fcbacd25b",
+            "Value": {
+                "id": "4dc17f60-f16d-48e9-a50e-75fdf50a40c2",
+                "resourcePath": "rooms\/rm_level1\/rm_level1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "194a230a-d341-4fdb-a766-144cfb69bc3d",
             "Value": {
                 "id": "8d34d760-f385-4ac4-b75c-4154d1e5c731",
@@ -271,6 +279,14 @@
             }
         },
         {
+            "Key": "5a8c5172-915f-4e78-bbfd-6ac689e07c12",
+            "Value": {
+                "id": "b58cba74-be1a-46f1-9539-6204181b5334",
+                "resourcePath": "objects\/obj_sanitization_station\/obj_sanitization_station.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5b3f7f8c-c8e4-4f24-a452-6769610e20b9",
             "Value": {
                 "id": "afcabbab-d491-4b3f-900a-4d6309ca313d",
@@ -327,6 +343,14 @@
             }
         },
         {
+            "Key": "6eea4052-383a-4ef3-b40b-dc38779e994a",
+            "Value": {
+                "id": "7fc8ed7b-0bbd-4e73-912e-94e92afee41a",
+                "resourcePath": "sprites\/spr_sanitization_station\/spr_sanitization_station.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7111f53d-edf7-40fb-9903-4572b4108683",
             "Value": {
                 "id": "1bbef525-0c85-43bc-9b08-8035fc9e73b9",
@@ -340,14 +364,6 @@
                 "id": "286ae235-81d9-43d7-98e3-37c2e4da841e",
                 "resourcePath": "objects\/obj_credits\/obj_credits.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "7617b1fc-448c-4c62-a101-c529b4cccc2a",
-            "Value": {
-                "id": "401aeaef-d89b-46be-b56c-6704638839ef",
-                "resourcePath": "rooms\/rm_level1\/rm_level1.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

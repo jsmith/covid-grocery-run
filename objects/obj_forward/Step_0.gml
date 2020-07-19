@@ -53,6 +53,15 @@ else if move_x < 0 facing = dir.left;
 else if move_y > 0 facing = dir.down;
 else if move_y < 0 facing = dir.up;
 
+// ----------- Check for collision with items
+if place_meeting(x, y, obj_sanitization_station) {
+	colliding_with_item = true;
+	if keyboard_check_pressed(ord("E")) {
+		with obj_game hp = hp_max;	
+	}
+};
+else colliding_with_item = false;
+
 // ----------- Check for transition collision
 var instance = instance_place(x, y, obj_transition);
 if instance != noone and facing == instance.player_facing_before {

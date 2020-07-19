@@ -5,7 +5,8 @@
     "name": "be025d15-4dfc-4a73-9acb-4bbb340fb98c",
     "children": [
         "c2232f70-74b9-4990-bb5c-880b3677ba7c",
-        "80dea735-1817-4b85-a867-96be6487830a"
+        "80dea735-1817-4b85-a867-96be6487830a",
+        "6eea4052-383a-4ef3-b40b-dc38779e994a"
     ],
     "filterType": "GMSprite",
     "folderName": "Items",
