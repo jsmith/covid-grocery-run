@@ -2,7 +2,8 @@
 
 y -= 0.5
 
-if y == height - 0 {
+// IDK why but I need to add 500
+if height + y - 500 < 0 {
 	instance_destroy();
-	room_goto(rm_level0);
+	game_restart();
 };

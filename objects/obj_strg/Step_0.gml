@@ -2,7 +2,6 @@
 // show_debug_message(message);
 
 if target_x == -1 || target_y == -1 {
-	show_debug_message(string(walking_route))
 	if array_height_2d(walking_route) == 0 {
 		show_debug_message("Did not find walking route :(");
 		target_x = 0;
@@ -40,7 +39,6 @@ if movement_x != 0 {
 	// Go to next route
 	route_index++;
 	
-	show_debug_message(string(array_height_2d(walking_route)))
 	if route_index == array_height_2d(walking_route) {
 		// show_debug_message("starting -> " + string(starting_y) + ", y -> " + string(y) + ", move -> " + string(starting_y - y));
 		target_x = 0;
@@ -57,8 +55,8 @@ if movement_x != 0 {
 
 
 switch direction div 90 {
-	case 0: sprite_index = spr_strg_right; break;
-	case 1: sprite_index = spr_strg_backward; break;
-	case 2: sprite_index = spr_strg_left; break;
-	case 3: sprite_index = spr_strg_forward; break;
+	case 0: if draw_two sprite_index = spr_strg2_right else sprite_index = spr_strg_right; break;
+	case 1: if draw_two sprite_index = spr_strg2_backward else sprite_index = spr_strg_backward; break;
+	case 2: if draw_two sprite_index = spr_strg2_left else sprite_index = spr_strg_left; break;
+	case 3: if draw_two sprite_index = spr_strg2_forward else sprite_index = spr_strg_forward; break;
 }

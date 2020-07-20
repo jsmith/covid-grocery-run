@@ -4,16 +4,20 @@ var distance_to_person = distance_to_object(obj_strg);
 
 
 if distance_to_person < 30 {
+	var factor = 1;
+	
+	if wearing_mask factor = 0.5;
+	
 	with obj_game {
 		if distance_to_person < 15 {
-			hp = max(hp - 0.5, 0);
+			hp = max(hp - 0.5 * factor, 0);
 		} else {
-			hp = max(hp - 0.25, 0);	
+			hp = max(hp - 0.25 * factor, 0);	
 		}
 
 		audio_sound_pitch(snd_background_highpass, 1 + 0.25 * (1 - hp / hp_max));
 
-		if hp == 0 {
+		if hp <= 0 {
 			game_over = true;
 		}
 
@@ -54,13 +58,34 @@ else if move_y > 0 facing = dir.down;
 else if move_y < 0 facing = dir.up;
 
 // ----------- Check for collision with items
-if place_meeting(x, y, obj_sanitization_station) {
+if place_meeting(x, y, obj_sanitization_station) or place_meeting(x, y, obj_mask) {
 	colliding_with_item = true;
+	
 	if keyboard_check_pressed(ord("E")) {
-		with obj_game hp = hp_max;	
+		if place_meeting(x, y, obj_sanitization_station) {
+			with obj_game hp = hp_max;
+			audio_sound_pitch(snd_background_highpass, 1);
+		} else {
+			// Remove it so it looks like we are picking it up
+			wearing_mask = true;
+			instance_destroy(obj_mask);
+			
+			// Kinda annoying but we need to init this or else it won't change until the player moves
+			// This could definitely be refactored and combined with the other code but it's ok
+			if sprite_index == spr_right {
+				sprite_index = spr_right_msk;
+			} else if sprite_index == spr_left {
+				sprite_index = spr_left_msk;
+			} else if sprite_index == spr_forward {
+				sprite_index = spr_forward_msk;
+			} else {
+				// If backwards we don't care because you can't see their face
+			}
+		}
 	}
+} else {
+	colliding_with_item = false;
 };
-else colliding_with_item = false;
 
 // ----------- Check for transition collision
 var instance = instance_place(x, y, obj_transition);
@@ -77,12 +102,13 @@ if instance != noone and facing == instance.player_facing_before {
 
 image_speed = img_spd;
 if move_x > 0 {
-	sprite_index = spr_right;
+	if wearing_mask sprite_index = spr_right_msk else sprite_index = spr_right;
 } else if move_x < 0 {
-	sprite_index = spr_left;
+	if wearing_mask sprite_index = spr_left_msk else sprite_index = spr_left;
 } else if move_y > 0 {
-	sprite_index = spr_forward;
+	if wearing_mask sprite_index = spr_forward_msk else sprite_index = spr_forward;
 } else if move_y < 0 {
+	// If backwards we can't see their face so we don't care
 	sprite_index = spr_backward;
 } else {
 	image_index = 1;

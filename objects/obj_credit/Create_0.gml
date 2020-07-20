@@ -72,6 +72,8 @@ Mikayla for test playing my game and giving me feedback.
 MAAC3601 by Jeff Mundee / 2020 / Summer Session D
 
 Game based on the ongoing COVID-19 pandemic. Stay safe!!
+
+Press 'r' to restart...
 ";
 
 // TODO
@@ -83,5 +85,5 @@ Game based on the ongoing COVID-19 pandemic. Stay safe!!
 
 audio_stop_all();
 x = room_width / 2;
-y = room_height + 50;
+y = -1;
 height = string_height(text);
