@@ -17,11 +17,11 @@ const convert = async (src, output, content) => {
   console.log(`Successfully converted "${src}" to "${output}"!`);
 }
  
-// convert("button.html", "start_button.png", { label: "🦠 Start" });
-// convert("button.html", "credits_button.png", { label: "📽️ Credits" });
+convert("button.html", "start_button.png", { label: "Start" });
+convert("button.html", "credits_button.png", { label: "Credits" });
 // convert("button.html", "leaderboards_button.png", { label: "🏆 Leaderboards" });
-// convert("button.html", "exit_button.png", { label: "👋 Quit" });
+convert("button.html", "exit_button.png", { label: "Quit" });
 // convert("title.html", "title.png");
 // convert("health-outline.html", "health-outline.png");
-convert("text-bubble.html", "text-bubble.png");
+// convert("text-bubble.html", "text-bubble.png");
 

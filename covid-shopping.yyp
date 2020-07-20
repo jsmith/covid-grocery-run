@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "1fa9a6ba-2348-4556-b92c-b37dcb135619",
+            "Value": {
+                "id": "6972e22d-8796-44b2-8c5e-d80a10279636",
+                "resourcePath": "objects\/obj_red\/obj_red.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "20046001-ba43-4820-849c-9d34a8881483",
             "Value": {
                 "id": "e1570d4d-c406-4e5f-9e1a-082392904f32",
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "83a1b852-bec8-47fe-984b-a60dd05c53d2",
+            "Value": {
+                "id": "7937c901-f202-4a2a-a0e0-f30b2c74d1d2",
+                "resourcePath": "objects\/obj_bolt\/obj_bolt.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8696771d-1c46-4d43-b19e-66a015687289",
             "Value": {
                 "id": "8968a2a1-fc4d-404d-a30d-12ee5d5959b9",
@@ -567,6 +583,14 @@
             }
         },
         {
+            "Key": "a4188758-4552-4072-aedb-c9ebbe8e0efb",
+            "Value": {
+                "id": "dc52958f-ae62-4f6f-a024-d67cf8e711fc",
+                "resourcePath": "objects\/obj_mene_item\/obj_mene_item.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a4cec530-1d5c-412f-8ab4-116928c049ee",
             "Value": {
                 "id": "44002838-226e-4b50-88a5-2b63c8d48de0",
@@ -615,6 +639,14 @@
             }
         },
         {
+            "Key": "b64546cd-44ef-4094-bc8b-64a3fabc155e",
+            "Value": {
+                "id": "6778563c-1d2c-4f74-86c7-135edf931781",
+                "resourcePath": "sprites\/spr_lightning\/spr_lightning.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bb675e70-c31a-40ce-9b8a-3b083599a5f2",
             "Value": {
                 "id": "7a5f12d6-9338-4e79-aabc-7de704e83214",
@@ -660,6 +692,14 @@
                 "id": "97279ea9-9a49-44b1-88e0-5cc663b53c48",
                 "resourcePath": "objects\/obj_title\/obj_title.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c76f86a0-340c-4e70-b68b-1f00d4acd3ef",
+            "Value": {
+                "id": "88afcebc-7b23-4891-b1fe-85d822643663",
+                "resourcePath": "sprites\/spr_red\/spr_red.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

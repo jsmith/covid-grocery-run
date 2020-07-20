@@ -4,11 +4,20 @@
     "mvc": "1.0",
     "name": "obj_credits",
     "eventList": [
-        
+        {
+            "id": "4cb6c643-5ac4-4450-a844-a9a2cdc8d4c1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "759852fd-6b1e-4675-83d4-af60db83f739"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "a4188758-4552-4072-aedb-c9ebbe8e0efb",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

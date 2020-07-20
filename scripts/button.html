@@ -1,28 +1,23 @@
 <html>
   <head>
     <meta charset="utf-8"/>
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- <link href="https://code.cdn.mozilla.net/fonts/ttf/FiraMono-Regular.ttf" rel="font" /> -->
     <style>
       @font-face {
-        font-family: "FiraMono";
-        src: url("https://code.cdn.mozilla.net/fonts/ttf/FiraMono-Regular.ttf") format("truetype");
-      }
-
-      @font-face {
-        font-family: "FiraMono";
-        src: url("https://code.cdn.mozilla.net/fonts/ttf/FiraMono-Bold.ttf") format("truetype");
-        font-weight: bold;
+        font-family: "Press Start 2P";
+        src: url("./PressStart2P-Regular.ttf")
+          format("truetype");
+        /* font-weight: bold; */
       }
 
       body {
-        font-family: "FiraMono", monospace;
+        font-family: "Press Start 2P";
       }
     </style>
   </head>
   <body class="text-black w-64 bg-transparent h-16">
-    <div class="border-2 border-blue-900 text-blue-900 text-2xl font-bold h-full flex items-center px-3">
-      {{ label }}
-    </div>
+    <a class="nes-btn w-full text-left" href="#">{{ label }}</a>
   </body>
 </html>
