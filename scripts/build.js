@@ -22,4 +22,6 @@ const convert = async (src, output, content) => {
 // convert("button.html", "leaderboards_button.png", { label: "🏆 Leaderboards" });
 // convert("button.html", "exit_button.png", { label: "👋 Quit" });
 // convert("title.html", "title.png");
-convert("health-outline.html", "health-outline.png");
+// convert("health-outline.html", "health-outline.png");
+convert("text-bubble.html", "text-bubble.png");
+
