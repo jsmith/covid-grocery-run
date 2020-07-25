@@ -10,6 +10,6 @@ if play_next {
 	play_next = false;
 } else if waiting_steps > 0 {
 	waiting_steps--;
-} else if message_index < 5 or (show_instructions and message_index < 8) {
+} else if message_index < 5 or (show_instructions and message_index < 9) {
 	play_next = true;
 }

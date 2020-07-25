@@ -11,14 +11,22 @@ jumps[2] = 215;
 jumps[3] = 162;
 jumps[4] = 172;
 jumps[5] = 235;
-jumps[6] = 400;
-jumps[7] = 125;
+jumps[6] = 420;
+jumps[7] = 400;
+jumps[7] = 465;
+jumps[8] = 125;
 
-waits[0] = 180;
-waits[1] = 180;
-waits[2] = 300;
-waits[3] = 180;
-waits[4] = 180;
-waits[5] = 300;
-waits[6] = 180;
-waits[7] = 180;
+// Initially I had a system to make the messages
+// move automatically. These are now pointless but
+// instead of refactoring I've set them to wait for
+// 24 hours
+waits[0] = 5184000;
+waits[1] = 5184000;
+waits[2] = 5184000;
+waits[3] = 5184000;
+waits[4] = 5184000;
+waits[5] = 5184000;
+waits[6] = 5184000;
+waits[7] = 5184000;
+waits[7] = 5184000;
+waits[8] = 5184000;

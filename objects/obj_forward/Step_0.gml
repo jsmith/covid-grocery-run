@@ -3,16 +3,16 @@ var distance_to_person = distance_to_object(obj_strg);
 // show_debug_message("Distance -> " + string(distance_to_person) + ", Direction -> " + string(direction));
 
 
-if distance_to_person < 30 {
+if distance_to_person < 30 and !global.debug {
 	var factor = 1;
 	
-	if wearing_mask factor = 0.5;
+	if wearing_mask factor = 0.75;
 	
 	with obj_game {
 		if distance_to_person < 15 {
-			hp = max(hp - 0.5 * factor, 0);
+			hp = max(hp - 0.4 * factor, 0);
 		} else {
-			hp = max(hp - 0.25 * factor, 0);	
+			hp = max(hp - 0.2 * factor, 0);	
 		}
 
 		audio_sound_pitch(snd_background_highpass, 1 + 0.25 * (1 - hp / hp_max));
@@ -33,6 +33,12 @@ var key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 var shift_down = keyboard_check(vk_shift);
 
 // ----------- Determining speed logic
+with obj_game {
+	if game_over {
+		exit;
+	}
+}
+
 var spd = 0;
 var img_spd = 0;
 if shift_down {
@@ -63,6 +69,7 @@ if place_meeting(x, y, obj_sanitization_station) or place_meeting(x, y, obj_mask
 	
 	if keyboard_check_pressed(ord("E")) {
 		if place_meeting(x, y, obj_sanitization_station) {
+			audio_play_sound(snd_faucet, 0, false);
 			with obj_game hp = hp_max;
 			audio_sound_pitch(snd_background_highpass, 1);
 		} else {
@@ -89,12 +96,12 @@ if place_meeting(x, y, obj_sanitization_station) or place_meeting(x, y, obj_mask
 
 // ----------- Check for transition collision
 var instance = instance_place(x, y, obj_transition);
-if instance != noone and facing == instance.player_facing_before {
+if instance != noone and facing == dir.up {
 	with (obj_game) {
 		// make sure that we have collected everything
 		// only then can we move to the next room
 		if num_total == num_collected {
-			spawn_room = instance.roomTarget;
+			spawn_room = room_next(room);
 			do_transition = true;	
 		}
 	}

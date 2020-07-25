@@ -54,6 +54,8 @@ Sound Effects
 (https://www.youtube.com/watch?v=NN_8vfN0HP4)
 2. Success Sound by GFS Sounds
 (https://www.youtube.com/watch?v=uKEm-Z7ONDc)
+3. Faucet Sound by FillSoko
+(https://freesound.org/people/FillSoko/sounds/257959/)
 
 Music 
 1. Elevator Music by Benjamin Tissot 
@@ -83,7 +85,6 @@ Press 'r' to restart...
 // Animation
 // https://www.youtube.com/watch?v=3QUwo4_g3uw ??
 
-audio_stop_all();
 x = room_width / 2;
 y = -1;
 height = string_height(text);

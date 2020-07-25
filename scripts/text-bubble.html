@@ -53,19 +53,31 @@
         
         <section class="message -left">
           <div class="nes-balloon from-left bg-gray-800 text-white" style="width: 350px">
-            Press "i" to see instructions or any key to continue...
+            Press "i" to see instructions or "c" key to start...
           </div>
         </section>
 
         <section class="message -left">
           <div class="nes-balloon from-left bg-gray-800 text-white" style="width: 350px">
-            <p>The goal of the game is to pickup *all* of the food items and make it to the other side of the store while avoiding others.</p>
+            <p>The goal of the game is to pickup *all* of the food items and make it to the other side 
+              of the store while avoiding others. </p>
           </div>
         </section>
+
+        <section class="message -left">
+          <div class="nes-balloon from-left bg-gray-800 text-white" style="width: 350px">
+            <p>You lose health if you are not properly socially distancing. Once your health is empty, 
+              you'll have to restart the level. Wearing a mask reduces the damage caused by others and 
+              washing your hands restores your health.</p>
+          </div>
+        </section>
+
+        
 
         <section class="message -left">
           <div class="nes-balloon from-left bg-gray-800 text-white" style="width: 350px">
             <p>Controls</p>
+            <p>1. Use the arrow keys or WASD to move.</p>
             <p>1. Hold "Shift" to run.</p>
             <p>2. Press "r" to restart the current level.</p>
             <p>3. When relevant, press "e" to interact with items.</p>
@@ -75,15 +87,15 @@
 
         <section class="message -left">
           <div class="nes-balloon from-left bg-gray-800 text-white" style="width: 350px">
-            Press any key to continue...
+            Press "c" to start...
           </div>
         </section>
     </section>
 
     <div class="nes-field is-inline text-xs relative" style="width: 350px">
       <!-- <label for="inline_field">.input.is-success</label> -->
-      <input type="text" id="inline_field" class="nes-input" placeholder="Type your message...">
-      <div class="absolute h-8 w-8 rounded-full right-0 mx-2" style="background-color: #147efb"></div>
+      <div type="text" id="inline_field" class="nes-input pr-10 text-gray-600 text-xs">Press "e" to see the next message...</div>
+      <div class="absolute h-8 w-8 rounded-full right-0 bottom-0 my-2  mx-2" style="background-color: #147efb"></div>
     </div>
   </body>
 </html>
