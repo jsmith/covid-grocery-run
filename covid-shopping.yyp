@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "1413050a-70aa-465e-8d48-aef931f39c65",
+            "Value": {
+                "id": "3097b516-9bdc-463a-b11a-4d0b718fc59a",
+                "resourcePath": "rooms\/rm_level5\/rm_level5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "164a903e-71d1-4d38-a1bc-ad3733d39dc9",
             "Value": {
                 "id": "ca2b3d3b-3234-4472-ba11-4a9838498a2e",
@@ -410,7 +418,7 @@
             "Key": "64f6e637-445c-41bd-b5fc-4534c8ede6cd",
             "Value": {
                 "id": "90e5bbf5-15ef-47b7-b908-919cedc533dd",
-                "resourcePath": "rooms\/rm_level5\/rm_level5.yy",
+                "resourcePath": "rooms\/rm_level6\/rm_level6.yy",
                 "resourceType": "GMRoom"
             }
         },

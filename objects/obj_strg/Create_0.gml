@@ -14,5 +14,5 @@ walking_route_scale = 1;
 
 target_x = -1;
 target_y = -1;
-route_index = 0;
+route_index = -1;
 walking_route = -1;

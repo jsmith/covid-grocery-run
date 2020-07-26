@@ -52,15 +52,19 @@ if displaying_game_win or displaying_game_over {
 	// Set font and then calculate width
 	draw_set_font(fnt_small);
 	
-	var level_text = "Level 1: So you need to get groceries?";
-	if room == rm_level2 {
-		var level_text = "Level 2: Social distancing is key";
+	var level_text = "TODO";
+	if room == rm_level1 {
+		level_text = "Level 1: So You Think You Can Get Groceries?";
+	} else if room == rm_level2 {
+		var level_text = "Level 2: The Social Distancing Network";
 	} else if room == rm_level3 {
-		level_text = "Level 3: Bask in the mask";
+		level_text = "Level 3: The Mask";
 	} else if room == rm_level4 {
-		level_text = "Level 4: The mask is back";
-	} else if room = rm_level5 {
+		level_text = "Level 4: Back to the Mask";
+	} else if room == rm_level5 {
 		level_text = "Level 5: Do you even wash your hands?";
+	} else if room == rm_level6 {
+		level_text = "Level 6: Don't Catch Me If You Can";	
 	}
 	
 	var collected_text = "Collected " + string(num_collected) + " / " + string(num_total) + " Items";

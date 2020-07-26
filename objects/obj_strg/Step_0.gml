@@ -13,11 +13,17 @@ if target_x == -1 or target_y == -1 {
 		show_debug_message("Did not find walking route!");
 		target_x = 0;
 		target_y = 0;
-	} else {
+	} else if route_index == -1 {
 		target_x = walking_route[0, 0] * walking_route_scale * walking_route_scale_x;
 		target_y = walking_route[0, 1] * walking_route_scale * walking_route_scale_y;
+		route_index = 0;
 		// show_debug_message("Init Target -> " + string(target_x) + ", " + string(target_y));
-	}	
+	} else {
+		target_x = walking_route[route_index, 0] * walking_route_scale * walking_route_scale_x;
+		target_y = walking_route[route_index, 1] * walking_route_scale * walking_route_scale_y;
+		starting_x = x - target_x;
+		starting_y = y - target_y;
+	}
 }
 
 var x_position = x - starting_x;
