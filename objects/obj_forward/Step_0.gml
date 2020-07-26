@@ -6,13 +6,13 @@ var distance_to_person = distance_to_object(obj_strg);
 if distance_to_person < 30 and !global.debug {
 	var factor = 1;
 	
-	if wearing_mask factor = 0.75;
+	if wearing_mask factor = 0.5;
 	
 	with obj_game {
 		if distance_to_person < 15 {
-			hp = max(hp - 0.4 * factor, 0);
+			hp = max(hp - 1 * factor, 0);
 		} else {
-			hp = max(hp - 0.2 * factor, 0);	
+			hp = max(hp - 0.5 * factor, 0);	
 		}
 
 		audio_sound_pitch(snd_background_highpass, 1 + 0.25 * (1 - hp / hp_max));

@@ -13,7 +13,7 @@ if room != rm_menu and room != rm_introduction and room != rm_win {
 	show_debug_message("Initializing room to defaults.");
 	// --------- Sound stuff
 	audio_sound_gain(snd_background_highpass, 1.4, 0);
-	// audio_play_sound(snd_background_highpass, 0, true);
+	audio_play_sound(snd_background_highpass, 0, true);
 	audio_sound_pitch(snd_background_highpass, 1);
 
 	view_enabled = true;

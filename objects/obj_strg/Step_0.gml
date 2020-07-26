@@ -1,14 +1,21 @@
 // var message = "ID: " + string(instance_id) + ", route: " + string(walking_route) + ", xy: " + string(x) + "," + string(y);
 // show_debug_message(message);
 
-if target_x == -1 || target_y == -1 {
-	if array_height_2d(walking_route) == 0 {
-		show_debug_message("Did not find walking route :(");
+if walking_route == -1 {
+	speed = 0;
+	image_speed = 0;
+	// Show the standing still (not walking) image
+	image_index = 1;
+}
+
+if target_x == -1 or target_y == -1 {
+	if walking_route == -1 or array_height_2d(walking_route) == 0 {
+		show_debug_message("Did not find walking route!");
 		target_x = 0;
 		target_y = 0;
 	} else {
-		target_x = walking_route[0, 0];
-		target_y = walking_route[0, 1];
+		target_x = walking_route[0, 0] * walking_route_scale * walking_route_scale_x;
+		target_y = walking_route[0, 1] * walking_route_scale * walking_route_scale_y;
 		// show_debug_message("Init Target -> " + string(target_x) + ", " + string(target_y));
 	}	
 }
@@ -39,20 +46,19 @@ if movement_x != 0 {
 	// Go to next route
 	route_index++;
 	
-	if route_index == array_height_2d(walking_route) {
+	if walking_route == -1 or route_index == array_height_2d(walking_route) {
 		// show_debug_message("starting -> " + string(starting_y) + ", y -> " + string(y) + ", move -> " + string(starting_y - y));
 		target_x = 0;
 		target_y = 0;
 		route_index = -1;
 	} else {
 		// show_debug_message("Now at " + string(y));
-		target_x = walking_route[route_index, 0];
-		target_y = walking_route[route_index, 1];
+		target_x = walking_route[route_index, 0] * walking_route_scale * walking_route_scale_x;
+		target_y = walking_route[route_index, 1] * walking_route_scale * walking_route_scale_y;
 	}
 	
 	// show_debug_message("Target -> " + string(target_x) + ", " + string(target_y));
 }
-
 
 switch direction div 90 {
 	case 0: if draw_two sprite_index = spr_strg2_right else sprite_index = spr_strg_right; break;

@@ -56,7 +56,7 @@ if displaying_game_win or displaying_game_over {
 	if room == rm_level2 {
 		var level_text = "Level 2: Social distancing is key";
 	} else if room == rm_level3 {
-		level_text = "Level 3: The back and forth";
+		level_text = "Level 3: Bask in the mask";
 	} else if room == rm_level4 {
 		level_text = "Level 4: The mask is back";
 	} else if room = rm_level5 {
