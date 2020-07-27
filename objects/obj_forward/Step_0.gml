@@ -100,9 +100,9 @@ if instance != noone and facing == dir.up {
 	with (obj_game) {
 		// make sure that we have collected everything
 		// only then can we move to the next room
-		if num_total == num_collected {
+		if num_total == num_collected or global.debug {
 			spawn_room = room_next(room);
-			do_transition = true;	
+			do_transition = true;
 		}
 	}
 };

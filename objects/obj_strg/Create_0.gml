@@ -16,3 +16,5 @@ target_x = -1;
 target_y = -1;
 route_index = -1;
 walking_route = -1;
+
+step_counter = 0;

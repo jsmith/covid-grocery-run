@@ -90,5 +90,30 @@ hp_max = 50;
 // --------- Score stuff
 num_collected = 0;
 
+// --------- Tips stuff
+tips[0] = @"Wearing a mask, even if your are not displaying symptoms,
+is one of the easiest ways for us to reduce the spread of
+COVID-19 - BCCDC";
+tips[1] = "You should wash your hands for at least 20 seconds - BCCDC";
+tips[2] = "You shouldn't touch your face with unwashed hands - BCCDC";
+tips[3] = @"If you don't have a disposable tissue available, cough and
+sneeze into the crease of your tissue - BCCDC";
+tips[4] = @"Did you know Canada Public Health recommends wearing face
+coverings when going out in public?";
+tips[5] = @"Masks alone won't prevent the spread of COVID-19 but that
+doesn't mean  they shouldn't be used. - Canada Public Health";
+tips[6] = @"In addition to staying at least 6ft from other, social 
+distancing means avoiding crowds altogether.";
+
+covid_tip_index = 0; // random(array_length_1d(tips) - 1);
+tip = 0;
+covid_tip_title = "COVID-19 - Facts & Safety Tips";
+
+// --------- Transition stuff
+level_text = "";
+// The amount of time between levels to keep black
+level_sleep_steps = 0;
+play_sound = false;
+
 // --------- DONE!
 room_goto(rm_menu);

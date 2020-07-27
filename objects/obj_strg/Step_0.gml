@@ -72,3 +72,8 @@ switch direction div 90 {
 	case 2: if draw_two sprite_index = spr_strg2_left else sprite_index = spr_strg_left; break;
 	case 3: if draw_two sprite_index = spr_strg2_forward else sprite_index = spr_strg_forward; break;
 }
+
+step_counter = (step_counter + 1) % 60;
+if step_counter mod 4 == 0 {
+	instance_create_layer(x + random_range(-30, 30), y + random_range(-30, 30), "Items", obj_dust);
+}

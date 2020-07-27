@@ -22,6 +22,8 @@ Redshrike, Bertram
 (https://nostalgic-css.github.io/NES.css)
 4. Modern Interiors Tileset by limezu 
 (https://limezu.itch.io/moderninteriors)
+5. Hand vector created by freepik
+(https://www.freepik.com/free-photos-vectors/hand)
 All other art assets and derivative work by Jacob Smith
 
 Fonts
@@ -31,6 +33,8 @@ VCR OSD Mono by Riciery Leal
 Animation
 Importing & Animating Sprites 
 (https://www.youtube.com/watch?v=0boZofzJfME)
+Image to animated 8 bit GIFS Online Tool
+(https://img8bit.com/)
 Lead Animator: Jacob Smith
 
 Coding
@@ -46,7 +50,9 @@ Coding
 (https://www.youtube.com/watch?v=UNZ97-c3dhY)
 7. Scrolling Text Tutorial
 (https://www.youtube.com/watch?v=nT6dj2blvMA)
-8. The Game Maker Docs!
+8. Dust Tutorial
+(https://www.youtube.com/watch?v=7NwG3736wgk)
+9. The Game Maker Docs!
 All code written by Jacob Smith
 
 Sound Effects

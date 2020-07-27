@@ -7,7 +7,10 @@ if message_index == 5 && keyboard_check_pressed(ord("I")) {
 	keyboard_check_pressed(ord("C")) and 
 	(message_index == 5 or message_index == 9)
 ) {
-	room_goto_next();
+	with obj_game {
+		spawn_room = room_next(room);
+		do_transition = true;	
+	}
 } else {
 	if keyboard_check_pressed(ord("E")) waiting_steps = 0;	
 }
