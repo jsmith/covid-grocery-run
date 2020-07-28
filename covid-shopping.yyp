@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0239b644-f5a8-4e38-81b1-c8ec4bee97fb",
+            "Value": {
+                "id": "203d1db7-d3ec-4f50-8e94-30cc32001761",
+                "resourcePath": "objects\/obj_wash_hands\/obj_wash_hands.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "03733f98-36e0-466d-93da-584e3dbf9e9d",
             "Value": {
                 "id": "7f421fda-da65-427a-b835-f7526e70167c",
@@ -179,6 +187,14 @@
             "Value": {
                 "id": "10016e4e-6329-44db-b2ae-aff92032ecbe",
                 "resourcePath": "sprites\/spr_strg2_backward\/spr_strg2_backward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "297ba628-4b02-45f3-b862-12c7c48898c6",
+            "Value": {
+                "id": "a1677c1e-2fc6-491b-a018-d20dffc1e5cc",
+                "resourcePath": "sprites\/spr_wait_here\/spr_wait_here.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -335,6 +351,14 @@
             }
         },
         {
+            "Key": "511e3d7b-908b-42b4-9a49-1c045fc3a3b9",
+            "Value": {
+                "id": "ca322616-8e11-412c-9a21-39dd8205a2a1",
+                "resourcePath": "objects\/obj_face_mask\/obj_face_mask.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5146c429-8576-4a44-8ce7-84d013578480",
             "Value": {
                 "id": "3e1deddd-19f3-4f06-b1e6-a4a5ed4d1d80",
@@ -403,6 +427,22 @@
             "Value": {
                 "id": "69486530-7c39-4d72-9937-0b71b0bd04e0",
                 "resourcePath": "sprites\/spr_right\/spr_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5ffeb15e-5ac9-4c51-ad4f-dbea16ca6102",
+            "Value": {
+                "id": "a260f70a-8a51-4a9b-bfc4-e73dad7266c1",
+                "resourcePath": "objects\/obj_keep_apart\/obj_keep_apart.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "61917f07-541c-4a8b-9b33-8e25669c230a",
+            "Value": {
+                "id": "cce1d218-6f0c-4720-b8ce-a20e36d92481",
+                "resourcePath": "sprites\/spr_wear_mask\/spr_wear_mask.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -540,6 +580,14 @@
                 "id": "e8370911-07ae-4381-a81c-57ee4cd25a19",
                 "resourcePath": "views\/7dc3425f-f23b-4008-92c7-b38a1d6c36af.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "808aa653-8d6b-4643-8ea8-9fb98130f977",
+            "Value": {
+                "id": "012a9fc7-8ba6-47c0-8600-c2077eef16ab",
+                "resourcePath": "sprites\/spr_keep_apart\/spr_keep_apart.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -815,6 +863,14 @@
             }
         },
         {
+            "Key": "d0f298da-2fa5-4272-acf0-0a2f703cb8f6",
+            "Value": {
+                "id": "828605e4-e921-4b98-b301-d7f6d3badbfc",
+                "resourcePath": "sprites\/spr_hand_washing\/spr_hand_washing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d30bbe49-3e35-4d03-afea-21cc4ffaee91",
             "Value": {
                 "id": "5e14a237-f9ed-4f3b-8916-29ff1ebaf828",
@@ -868,6 +924,14 @@
                 "id": "a3360df2-5903-4a7b-88c9-b25450e4d826",
                 "resourcePath": "tilesets\/ts_food_carts\/ts_food_carts.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "e67b9e44-6a13-4117-a176-03a3298bbf4e",
+            "Value": {
+                "id": "0a55eef6-e8ea-435a-9c5f-fcb0688714d8",
+                "resourcePath": "objects\/obj_wait_here\/obj_wait_here.yy",
+                "resourceType": "GMObject"
             }
         },
         {

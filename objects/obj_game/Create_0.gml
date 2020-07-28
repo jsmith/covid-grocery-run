@@ -104,6 +104,10 @@ tips[5] = @"Masks alone won't prevent the spread of COVID-19 but that
 doesn't mean  they shouldn't be used. - Canada Public Health";
 tips[6] = @"In addition to staying at least 6ft from other, social 
 distancing means avoiding crowds altogether.";
+tips[7] = @"As of July 27th 2020, there are over 16.3M confirmed COVID-19
+cases worldwide - WHO";
+tips[8] = @"Worldwide, the daily confirmed COVID-19 cases are still 
+increasing - WHO";
 
 covid_tip_index = 0; // random(array_length_1d(tips) - 1);
 tip = 0;

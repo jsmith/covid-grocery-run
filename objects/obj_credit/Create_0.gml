@@ -24,6 +24,8 @@ Redshrike, Bertram
 (https://limezu.itch.io/moderninteriors)
 5. Hand vector created by freepik
 (https://www.freepik.com/free-photos-vectors/hand)
+6. COVID Posters by Avery Dennison Graphic Solutions
+(https://graphicsap.averydennison.com/en/home/resource-center/sign-downloads.html)
 All other art assets and derivative work by Jacob Smith
 
 Fonts

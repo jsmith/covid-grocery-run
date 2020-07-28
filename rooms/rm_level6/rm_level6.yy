@@ -58,7 +58,9 @@
         "53a27e03-0bd4-495b-acb4-629a869486d4",
         "6a710180-de82-4602-a56a-6bc9a56a69e6",
         "ab44a4f4-c874-4585-934f-9acc287f301d",
-        "d870036d-def4-4f92-a404-5d1cbc9b207a"
+        "d870036d-def4-4f92-a404-5d1cbc9b207a",
+        "4a40273c-a26a-440d-84e7-583297e4423e",
+        "712c8db3-9f60-4579-8919-746157503515"
     ],
     "IsDnD": false,
     "layers": [
@@ -357,10 +359,37 @@
             "y": 0
         },
         {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "HandWashingSign",
+            "id": "0de3a7a1-27b2-41ee-b1d4-ca8254d03def",
+            "depth": 600,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_7FBFA3B8","id": "4a40273c-a26a-440d-84e7-583297e4423e","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7FBFA3B8","objId": "0239b644-f5a8-4e38-81b1-c8ec4bee97fb","properties": null,"rotation": 0,"scaleX": 0.5901639,"scaleY": 0.5901639,"mvc": "1.1","x": 425,"y": 310},
+{"name": "inst_3450BECC","id": "712c8db3-9f60-4579-8919-746157503515","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3450BECC","objId": "5ffeb15e-5ac9-4c51-ad4f-dbea16ca6102","properties": null,"rotation": 0,"scaleX": 0.42,"scaleY": 0.42,"mvc": "1.1","x": 59,"y": 303}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "tile_background",
             "id": "1304a152-0efa-4480-a8cc-9e16dbaca733",
-            "depth": 600,
+            "depth": 700,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -446,7 +475,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 700,
+            "depth": 800,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
