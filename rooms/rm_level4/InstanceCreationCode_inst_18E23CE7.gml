@@ -1,1 +1,1 @@
-walking_route = global.walking_route_right_100;
+walking_route = global.walking_route_down_100;

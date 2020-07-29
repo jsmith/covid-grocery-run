@@ -83,7 +83,7 @@ MAAC3601 by Jeff Mundee / 2020 / Summer Session D
 
 Game based on the ongoing COVID-19 pandemic. Stay safe!!
 
-Press 'r' to restart...
+Press 'Esc' to return to menu...
 ";
 
 // TODO

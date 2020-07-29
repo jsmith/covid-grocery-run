@@ -12,14 +12,17 @@ if displaying_game_win or displaying_game_over {
 		extra_height += string_height(tip);
 	}
 	
+	var horizontal_size;
+	if displaying_game_over horizontal_size = 750 else horizontal_size = 800;
+	
 
 	draw_set_colour(c_black);
 	draw_set_alpha(0.5);
-	draw_rectangle(midh - 350, midv - 50, midh + 350, midh - 10 + extra_height / 2, false);
+	draw_rectangle(midh - horizontal_size / 2, midv - 50, midh + horizontal_size / 2, midh - 10 + extra_height / 2, false);
 	draw_set_alpha(1);
 
 	var text;
-	if displaying_game_win text = "Congratulations!!";
+	if displaying_game_win text = "Nice Grocery Run!!";
 	else text = "Game Over";
 	
 
@@ -49,6 +52,7 @@ if displaying_game_win or displaying_game_over {
 		instance_destroy(obj_forward);
 		do_transition = false;
 		displaying_game_win = true;
+		audio_stop_sound(snd_background_highpass);
 		audio_play_sound(snd_win, 0, false);
 		camera_set_view_target(view_camera[0], noone);
 		exit;

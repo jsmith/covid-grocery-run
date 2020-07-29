@@ -97,7 +97,7 @@ COVID-19 - BCCDC";
 tips[1] = "You should wash your hands for at least 20 seconds - BCCDC";
 tips[2] = "You shouldn't touch your face with unwashed hands - BCCDC";
 tips[3] = @"If you don't have a disposable tissue available, cough and
-sneeze into the crease of your tissue - BCCDC";
+sneeze into the crease of your elbow - BCCDC";
 tips[4] = @"Did you know Canada Public Health recommends wearing face
 coverings when going out in public?";
 tips[5] = @"Masks alone won't prevent the spread of COVID-19 but that
@@ -109,7 +109,7 @@ cases worldwide - WHO";
 tips[8] = @"Worldwide, the daily confirmed COVID-19 cases are still 
 increasing - WHO";
 
-covid_tip_index = 0; // random(array_length_1d(tips) - 1);
+covid_tip_index = random(array_length_1d(tips) - 1);
 tip = 0;
 covid_tip_title = "COVID-19 - Facts & Safety Tips";
 
