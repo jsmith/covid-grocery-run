@@ -93,7 +93,7 @@ if displaying_game_win or displaying_game_over {
 	} else if level_sleep_steps > 0 {
 		level_sleep_steps--;
 	}
-} else if room != rm_introduction and room != rm_win and room != rm_menu {
+} else if room != rm_introduction and room != rm_win and room != rm_menu and room != rm_levels {
 	// Set font and then calculate width
 	draw_set_font(fnt_small);
 	

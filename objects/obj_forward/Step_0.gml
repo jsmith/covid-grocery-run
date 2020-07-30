@@ -96,16 +96,23 @@ if place_meeting(x, y, obj_sanitization_station) or place_meeting(x, y, obj_mask
 
 // ----------- Check for transition collision
 var instance = instance_place(x, y, obj_transition);
-if instance != noone and facing == dir.up {
+if instance != noone and (facing == dir.up || facing == -1) {
+	var local_cannot_transition = false;
 	with (obj_game) {
 		// make sure that we have collected everything
 		// only then can we move to the next room
 		if num_total == num_collected or global.debug {
 			spawn_room = room_next(room);
 			do_transition = true;
+		} else {
+			local_cannot_transition = true;
 		}
 	}
-};
+	
+	cannot_transition = local_cannot_transition;
+} else {
+	cannot_transition = false;	
+}
 
 image_speed = img_spd;
 if move_x > 0 {

@@ -22,6 +22,8 @@ spawn_room = -1;
 do_transition = false;
 
 // --------- Global stuff
+global.n_levels = 6;
+
 global.walking_route_down_100[0, 0] = 0;
 global.walking_route_down_100[0, 1] = 100;
 global.walking_route_up_100[0, 0] = 0;
@@ -121,3 +123,10 @@ play_sound = false;
 
 // --------- DONE!
 room_goto(rm_menu);
+
+level_names[0] = "Level 1: So You Think You Can Get Groceries?";
+level_names[1] = "Level 2: The Social Distancing Network";
+level_names[2] = "Level 3: The Mask";
+level_names[3] = "Level 4: Back to the Mask";
+level_names[4] = "Level 5: Don't Catch Me If You Can"; // Do you even wash your hands?
+level_names[5] = "Level 6: The COVID Sense";

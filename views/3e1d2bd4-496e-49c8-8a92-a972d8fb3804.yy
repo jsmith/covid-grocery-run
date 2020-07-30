@@ -14,7 +14,8 @@
         "1fa9a6ba-2348-4556-b92c-b37dcb135619",
         "83a1b852-bec8-47fe-984b-a60dd05c53d2",
         "a4188758-4552-4072-aedb-c9ebbe8e0efb",
-        "f92b37b8-eb0b-45fa-b019-b572b8ebcda9"
+        "f92b37b8-eb0b-45fa-b019-b572b8ebcda9",
+        "379fc67e-2c17-45e6-933e-c19a8c50987f"
     ],
     "filterType": "GMObject",
     "folderName": "Menu",

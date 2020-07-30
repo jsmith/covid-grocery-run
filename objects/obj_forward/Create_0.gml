@@ -12,3 +12,4 @@ img_spd_run = 0.8;
 // -------- Collision stuff
 colliding_with_item = false;
 wearing_mask = false;
+cannot_transition = false;
