@@ -2,6 +2,10 @@ var level_text;
 var index = level_index;
 with obj_game {
 	level_text = level_names[index];
+	
+	if do_transition {
+		exit;
+	}
 }
 
 draw_set_font(fnt_small);

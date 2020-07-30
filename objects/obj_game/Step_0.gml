@@ -12,6 +12,6 @@ if game_over and not displaying_game_over {
 if play_sound {
 	audio_sound_gain(snd_background_highpass, 1.4, 0);
 	audio_play_sound(snd_background_highpass, 0, true);
-	audio_sound_pitch(snd_background_highpass, 1);
+	audio_sound_pitch(snd_background_highpass, 1 + 0.25 * (1 - hp / hp_max));
 	play_sound = false;	
 }

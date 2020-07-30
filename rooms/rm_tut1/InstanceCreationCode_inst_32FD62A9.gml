@@ -1,0 +1,1 @@
+direction = dir.up;

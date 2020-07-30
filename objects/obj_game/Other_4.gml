@@ -1,5 +1,6 @@
 /// @description Reset room variables
-hp = hp_max;
+hp = hp_init;
+hp_init = hp_max;
 num_collected = 0;
 num_total = instance_number(obj_food);
 
@@ -25,7 +26,9 @@ if room != rm_menu and room != rm_introduction and room != rm_win and room != rm
 level_text = "TODO";
 if room == rm_level1 level_text = level_names[0];
 else if room == rm_level2 level_text = level_names[1];
-else if room == rm_level3 level_text = level_names[2];
-else if room == rm_level4 level_text = level_names[3];
-else if room == rm_level5 level_text = level_names[4];
-else if room == rm_level6 level_text = level_names[5];
+else if room == rm_tut1 level_text = level_names[2];
+else if room == rm_level3 level_text = level_names[3];
+else if room == rm_level4 level_text = level_names[4];
+else if room == rm_tut2 level_text = level_names[5];
+else if room == rm_level5 level_text = level_names[6];
+else if room == rm_level6 level_text = level_names[7];

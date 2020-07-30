@@ -5,16 +5,6 @@
     "name": "obj_levels_button",
     "eventList": [
         {
-            "id": "2b357504-7cc3-4467-9666-823354eee5c0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 6,
-            "m_owner": "379fc67e-2c17-45e6-933e-c19a8c50987f"
-        },
-        {
             "id": "9ec7cc42-6c3f-4b4d-be10-44feac6614a7",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -32,6 +22,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 13,
             "eventtype": 9,
+            "m_owner": "379fc67e-2c17-45e6-933e-c19a8c50987f"
+        },
+        {
+            "id": "b1eb230b-e1db-4c0f-83b0-49b9c3127036",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
             "m_owner": "379fc67e-2c17-45e6-933e-c19a8c50987f"
         }
     ],

@@ -1,5 +1,3 @@
-/// @description Draw debug things
-
 if !global.debug exit;
 
 
