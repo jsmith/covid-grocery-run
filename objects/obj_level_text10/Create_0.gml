@@ -1,2 +1,2 @@
 event_inherited();
-level_index = 10;
+level_index = 9;

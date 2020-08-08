@@ -125,14 +125,14 @@ play_sound = false;
 // --------- DONE!
 room_goto(rm_menu);
 
-level_names[0] = "Tutorial 1: Gotta Collect Them All";
-level_names[1] = "Level 1: So You Think You Can Get Groceries?";
-level_names[2] = "Level 2: Around We Go";
+level_names[0] = "Tutorial 1: COVID Grocery Run";
+level_names[1] = "Level 1: 2020: A COVID Odyssey";
+level_names[2] = "Level 2: COVID Go Round";
 level_names[3] = "Tutorial 2: Run COVID Run";
 level_names[4] = "Level 3: The Social Distancing Network";
 level_names[5] = "Tutorial 3: Mask Wearing";
 level_names[6] = "Level 4: The Mask";
-level_names[7] = "Level 5: Back to the Mask";
-level_names[8] = "Tutorial 4: Hand Washing";
+level_names[7] = "Tutorial 4: Hand Washing";
+level_names[8] = "Level 5: The Sound of COVID";
 level_names[9] = "Level 6: Don't Catch Me If You Can"; // Do you even wash your hands?
 level_names[10] = "Level 7: The COVID Sense";

@@ -6,6 +6,8 @@ if game_over and not displaying_game_over {
 	covid_tip_index = (covid_tip_index + 1) % array_length_1d(tips);
 	audio_play_sound(snd_game_over, 0, false);
 	audio_stop_sound(snd_background_highpass);
+	audio_stop_sound(snd_heart_fast);
+	audio_stop_sound(snd_heart_slow);
 	camera_set_view_target(view_camera[0], noone);
 }
 

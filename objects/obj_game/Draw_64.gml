@@ -45,7 +45,7 @@ if displaying_game_win or displaying_game_over {
 	}
 
 	draw_set_font(fnt_small);
-	draw_text(midh, draw_y + 45, "Press \"r\" to restart or \"Esc\" to quit...");
+	draw_text(midh, draw_y + 45, "Press \"Esc\" to quit...");
 	if displaying_game_win draw_text(midh, midv + 75, "Press \"c\" to see credits...");
 } else if do_transition {
 	if spawn_room == rm_win {

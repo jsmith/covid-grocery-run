@@ -8,12 +8,12 @@ play_next = false;
 jumps[0] = 172;
 jumps[1] = 125;
 jumps[2] = 215;
-jumps[3] = 162;
+jumps[3] = 158;
 jumps[4] = 172;
 jumps[5] = 235;
 jumps[6] = 420;
 jumps[7] = 400;
-jumps[7] = 465;
+jumps[7] = 250;
 jumps[8] = 125;
 
 // Initially I had a system to make the messages

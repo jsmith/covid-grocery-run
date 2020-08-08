@@ -1,1 +1,0 @@
-direction = dir.right;

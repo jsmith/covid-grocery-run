@@ -10,6 +10,8 @@ displaying_game_win = false;
 
 audio_stop_sound(snd_background_highpass);
 audio_stop_sound(snd_game_over);
+audio_stop_sound(snd_heart_fast);
+audio_stop_sound(snd_heart_slow);
 
 if room != rm_menu and room != rm_introduction and room != rm_win and room != rm_levels {
 	show_debug_message("Initializing room to defaults.");

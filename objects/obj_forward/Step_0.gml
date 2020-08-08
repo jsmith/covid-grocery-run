@@ -2,11 +2,33 @@
 var distance_to_person = distance_to_object(obj_strg);
 // show_debug_message("Distance -> " + string(distance_to_person) + ", Direction -> " + string(direction));
 
+var is_game_over = false;
+with obj_game {
+	is_game_over = game_over;
+}
 
-if distance_to_person < 30 and !global.debug {
+
+if distance_to_person < 30 and !global.debug and !is_game_over {
 	var factor = 1;
 	
 	if wearing_mask factor = 0.5;
+	
+	if !heart_beating_fast {
+		audio_play_sound(snd_heart_fast, 0, true);
+		heart_beating_fast = true;
+	}
+	
+	// var nearest = instance_nearest(x, y, obj_strg);
+	// var x_diff = nearest.x - x;
+	// var y_diff = nearest.y - y;
+	// x += -10 * sign(x_diff);
+	// y += -10 * sign(y_diff);
+	// audio_play_sound(snd_damage, 0, false);
+	if distance_to_person < 15 {
+		image_blend = make_color_hsv(359, 255, 255);	
+	} else {
+		image_blend = make_color_hsv(359, 128, 255);
+	}
 	
 	with obj_game {
 		if distance_to_person < 15 {
@@ -21,6 +43,13 @@ if distance_to_person < 30 and !global.debug {
 			game_over = true;
 		}
 
+	}
+} else {
+	image_blend = c_white;
+	
+	if heart_beating_fast {
+		audio_stop_sound(snd_heart_fast);
+		heart_beating_fast = false;
 	}
 }
 

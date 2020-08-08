@@ -75,5 +75,26 @@ switch direction div 90 {
 
 step_counter = (step_counter + 1) % 60;
 if step_counter mod 4 == 0 {
-	instance_create_layer(x + random_range(-30, 30), y + random_range(-30, 30), "Items", obj_dust);
+	if random(1) < 0.5 {
+		var xx = 0;
+		if random(1) < 0.5 xx = random_range(-18, -5);
+		else xx = random_range(18, 5);
+		
+		var yy = 0;
+		if random(1) < 0.5 yy = random_range(-18, -5);
+		else yy = random_range(18, 5);
+		
+		instance_create_layer(x + xx - 5, y + yy, "Items", obj_dust_large);
+	} else {
+		var xx = 0;
+		if random(1) < 0.5 xx = random_range(-30, -12);
+		else xx = random_range(30, 12);
+		
+		var yy = 0;
+		if random(1) < 0.5 yy = random_range(-30, -12);
+		else yy = random_range(30, 12);
+		
+		instance_create_layer(x + xx - 5, y + yy, "Items", obj_dust);
+	}
+	
 }
