@@ -23,12 +23,8 @@ if room != rm_menu and room != rm_introduction and room != rm_win and room != rm
 	}
 }
 
+show_debug_message(room);
 level_text = "TODO";
-if room == rm_level1 level_text = level_names[0];
-else if room == rm_level2 level_text = level_names[1];
-else if room == rm_tut1 level_text = level_names[2];
-else if room == rm_level3 level_text = level_names[3];
-else if room == rm_level4 level_text = level_names[4];
-else if room == rm_tut2 level_text = level_names[5];
-else if room == rm_level5 level_text = level_names[6];
-else if room == rm_level6 level_text = level_names[7];
+if room >= 3 and room < 3 + global.n_levels {
+	level_text = level_names[room - 3];	
+}

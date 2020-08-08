@@ -109,15 +109,11 @@ if displaying_game_win or displaying_game_over {
 	draw_rectangle(10, 10, 220, 70, true);
 	draw_set_alpha(1);
 
-	var hb_width = 103;
-	var hb_height = 15;
 	var hb_x = 20;
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	
 	draw_text(hb_x, 20, level_text);
-	draw_text(hb_x, 85, collected_text);
-	draw_sprite(spr_health_bar_container, 0, hb_x, 60);
-	draw_sprite_stretched(spr_health_bar, 0, hb_x, 60, hp / hp_max * hb_width, hb_height);
+	draw_text(hb_x, 55, collected_text);
 }

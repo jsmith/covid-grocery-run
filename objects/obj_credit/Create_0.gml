@@ -64,6 +64,8 @@ Sound Effects
 (https://www.youtube.com/watch?v=uKEm-Z7ONDc)
 3. Faucet Sound by FillSoko
 (https://freesound.org/people/FillSoko/sounds/257959/)
+3. Powerup Sound by JustInvoke
+(https://freesound.org/people/JustInvoke/sounds/138485/)
 
 Music 
 1. Elevator Music by Benjamin Tissot 
@@ -73,6 +75,8 @@ Music Editing by Jacob Smith
 Testers
 Lead Tester: Jacob Smith
 Tester: Mikayla Goodine
+Tester: Paul Savoie
+Tester: Jeff Mundee
 
 Special Thanks to Jeff Mundee for teaching us about game 
 development, my family for giving me the best encouragement, 

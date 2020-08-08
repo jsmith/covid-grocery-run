@@ -1,3 +1,3 @@
 with obj_game {
-	hp_init = hp_max / 5;
+	hp_init = hp_max / 2;
 }

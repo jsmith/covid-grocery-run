@@ -30,7 +30,6 @@ var key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var key_up = keyboard_check(vk_up) || keyboard_check(ord("W"));
 var key_down = keyboard_check(vk_down) || keyboard_check(ord("S"));
-var shift_down = keyboard_check(vk_shift);
 
 // ----------- Determining speed logic
 with obj_game {
@@ -41,7 +40,7 @@ with obj_game {
 
 var spd = 0;
 var img_spd = 0;
-if shift_down {
+if running {
 	spd = spd_run;
 	img_spd = img_spd_run;
 } else {
@@ -64,7 +63,11 @@ else if move_y > 0 facing = dir.down;
 else if move_y < 0 facing = dir.up;
 
 // ----------- Check for collision with items
-if place_meeting(x, y, obj_sanitization_station) or place_meeting(x, y, obj_mask) {
+if (
+	place_meeting(x, y, obj_sanitization_station) or 
+	place_meeting(x, y, obj_mask) or
+	place_meeting(x, y, obj_run_powerup)
+) {
 	colliding_with_item = true;
 	
 	if keyboard_check_pressed(ord("E")) {
@@ -72,7 +75,7 @@ if place_meeting(x, y, obj_sanitization_station) or place_meeting(x, y, obj_mask
 			audio_play_sound(snd_faucet, 0, false);
 			with obj_game hp = hp_max;
 			audio_sound_pitch(snd_background_highpass, 1);
-		} else {
+		} else  if place_meeting(x, y, obj_mask) {
 			// Remove it so it looks like we are picking it up
 			wearing_mask = true;
 			instance_destroy(obj_mask);
@@ -88,6 +91,10 @@ if place_meeting(x, y, obj_sanitization_station) or place_meeting(x, y, obj_mask
 			} else {
 				// If backwards we don't care because you can't see their face
 			}
+		} else {
+			audio_play_sound(snd_powerup, 0, false);
+			running = true;
+			instance_destroy(obj_run_powerup);	
 		}
 	}
 } else {
