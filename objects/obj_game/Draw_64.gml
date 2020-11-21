@@ -45,14 +45,20 @@ if displaying_game_win or displaying_game_over {
 	}
 
 	draw_set_font(fnt_small);
-	draw_text(midh, draw_y + 45, "Press \"Esc\" to quit...");
-	if displaying_game_win draw_text(midh, midv + 75, "Press \"c\" to see credits...");
+	if displaying_game_win {
+		draw_text(midh, draw_y + 45, "Press \"Esc\" to quit...");
+		draw_text(midh, midv + 75, "Press \"c\" to see credits...");
+	} else {
+		draw_text(midh, draw_y + 45, "Press \"r\" to restart \"Esc\" to quit...");
+	}
 } else if do_transition {
 	if spawn_room == rm_win {
 		instance_destroy(obj_forward);
 		do_transition = false;
 		displaying_game_win = true;
 		audio_stop_sound(snd_background_highpass);
+		audio_stop_sound(snd_heart_fast);
+		audio_stop_sound(snd_heart_slow);
 		audio_play_sound(snd_win, 0, false);
 		camera_set_view_target(view_camera[0], noone);
 		exit;
